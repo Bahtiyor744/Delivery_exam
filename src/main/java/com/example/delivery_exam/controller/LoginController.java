@@ -1,7 +1,6 @@
 package com.example.delivery_exam.controller;
 
 import com.example.delivery_exam.dto.LoginDTO;
-import com.example.delivery_exam.dto.UserDTO;
 import com.example.delivery_exam.entity.User;
 import com.example.delivery_exam.service.TokenService;
 import lombok.RequiredArgsConstructor;
