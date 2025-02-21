@@ -10,6 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -17,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
 public class User extends BaseEntity implements UserDetails {
     private String firstName;
     private String lastName;
@@ -25,7 +26,8 @@ public class User extends BaseEntity implements UserDetails {
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Roles> roles;
-    public String getFull(){
+
+    public String getFull() {
         return firstName + " " + lastName;
     }
 

@@ -13,10 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class AttachmentContent extends BaseEntity {
-
-
     private byte[] data;
-
     @OneToOne
     private Attachment attachment;
 }

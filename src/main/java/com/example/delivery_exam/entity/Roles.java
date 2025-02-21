@@ -18,7 +18,6 @@ import org.springframework.security.core.GrantedAuthority;
 public class Roles extends BaseEntity implements GrantedAuthority {
     @Enumerated(EnumType.STRING)
     private UserRole role;
-
     @Override
     public String getAuthority() {
         return this.role.name();

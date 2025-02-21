@@ -17,10 +17,8 @@ import java.math.BigDecimal;
 public class Product extends BaseEntity {
     private String name;
     private BigDecimal price;
-
     @ManyToOne
     private Category category;
-
     @OneToOne
     private Attachment attachment;
 }
